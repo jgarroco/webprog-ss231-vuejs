@@ -3,14 +3,36 @@
 <head>
 <title>My first Vue page</title>
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/flexbox-grid.css?version=0.1">
 
 </head>
 <body>
+    <div class="container">
+        <header>
+          <h1>Personal Profile Web Page</h1>
+        </header>
+        <main>
+          <section class="main-content">
+            <div>1 <br>About Me</div>
+            <div>2 <br>Education / Achievements</div>
+            <div>3 <br>Course</div>
+            <div>4 <br>IT Experience</div>
+            <div>5 <br>Hobbies & Interests</div>
+            <div>6 <br>Goals In Life / Dream</div>
+            <div>7</div>
+          </section>
+          <aside class="sidebar">
+            Sidebar<br>
+            Picture Gallery
+          </aside>
+        </main>
+        <footer>
+          Asia Pacific College
+        </footer>
+      </div>
+      
  
-<h1>Example with JavaScript inside {{ }}</h1>
- 
-<p>The 'message' text from the Vue instance is put together with another text and a JavaScript expression. The JavaScript expression creates a random integer between 1 and 6.</p>
- 
+
 <div id="app">
   {{ message }} <br>
   {{'Random number: ' + Math.ceil(Math.random()*6) }}
