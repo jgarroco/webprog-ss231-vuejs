@@ -1,6 +1,7 @@
 <template>
   <div>
     <h1>Food</h1>
+    <personal-profile/> <br>
     <div class="food-container">
       <food-item></food-item>
       <food-item2></food-item2>
@@ -10,11 +11,7 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'App',
-};
-</script>
+<script> </script>
 
 <style>
 .food-container {
