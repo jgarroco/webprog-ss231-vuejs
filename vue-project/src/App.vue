@@ -1,10 +1,26 @@
 <template>
-  <h1>Food</h1>
-  <food-item/>
-  <food-item/>
-  <food-item/>
+  <div>
+    <h1>Food</h1>
+    <div class="food-container">
+      <food-item></food-item>
+      <food-item2></food-item2>
+      <food-item></food-item>
+      <food-item2></food-item2>
+    </div>
+  </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  name: 'App',
+};
+</script>
 
-<style></style>
+<style>
+.food-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px;
+  justify-content: flex-start; 
+}
+</style>
